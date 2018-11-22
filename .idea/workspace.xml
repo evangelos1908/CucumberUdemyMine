@@ -270,6 +270,8 @@
       <list>
         <item itemvalue="Cucumber java.Scenario: Positive test for the Search Cars page" />
         <item itemvalue="Cucumber java.Feature: Login" />
+        <item itemvalue="Cucumber java.Scenario: Positive test for the Search Cars page" />
+        <item itemvalue="Cucumber java.Feature: Login" />
       </list>
     </recent_temporary>
   </component>
