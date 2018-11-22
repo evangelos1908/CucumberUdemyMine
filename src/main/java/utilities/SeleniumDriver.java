@@ -10,8 +10,9 @@ public class SeleniumDriver {
 
     //Singleton pattern is used
     //all the variables and the methods of a Singleton class should be static
-    /*why static ? because only 1 object of the class can be created at a given time, so the variables
-    and the methods will be shared on that
+    /*why static variables ? because only 1 object of the class can be created at a given time, so the variables
+    will be shared
+    * Why Static methods: to be able to call them without an object of the current class to be required
     * Definition of static: A static variable is common to all the instances (or objects) of the class because it is a class level variable.
     In other words you can say that only a single copy of static variable is created and shared among all the instances of the class.
     */
@@ -47,7 +48,7 @@ public class SeleniumDriver {
         driver.get(url);
     }
 
-    public WebDriver getDriver(){
+    public static WebDriver getDriver(){
         return driver;
     }
 
