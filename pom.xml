@@ -18,6 +18,20 @@
 
         <dependency>
             <groupId>info.cukes</groupId>
+            <artifactId>cucumber-junit</artifactId>
+            <version>1.2.5</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-jvm</artifactId>
+            <version>1.2.5</version>
+            <type>pom</type>
+        </dependency>
+
+        <dependency>
+            <groupId>info.cukes</groupId>
             <artifactId>cucumber-core</artifactId>
             <version>1.2.5</version>
         </dependency>
@@ -28,6 +42,15 @@
             <version>1.2.5</version>
             <scope>test</scope>
         </dependency>
+
+        <!--
+        <dependency>
+            <groupId>info.cukes</groupId>
+            <artifactId>cucumber-testng</artifactId>
+            <version>1.2.5</version>
+        </dependency>
+        -->
+
 
         <!-- Not adding the lastest one, because not sure if it's licensed or free -->
         <dependency>

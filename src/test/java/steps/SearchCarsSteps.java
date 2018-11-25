@@ -11,6 +11,7 @@ import sun.security.util.PendingException;
 import utilities.SeleniumDriver;
 
 import java.util.List;
+import java.util.Map;
 
 public class SearchCarsSteps {
 
@@ -36,9 +37,11 @@ public class SearchCarsSteps {
         carsGuideHomePage.clickOnSearchCarsMenu();
     }
 
-    @And("^user selects car brand \"([^\"]*)\" from anymake dropdown list$")
-    public void user_selects_car_brand_from_anymake_dropdown_list(String carMake) throws Throwable {
-        carsSearchPage.selectCarMake(carMake);
+    @When("^user selects car brand from anymake dropdown list$")
+    public void user_selects_car_brand_from_anymake_dropdown_list(DataTable dataTable) throws Throwable{
+        //code to handle the data table
+        List<Map<String, String>> data = dataTable.asMaps(String.class, String.class);
+        carsSearchPage.selectCarMake((data.get(0).get("carMake")));
     }
 
     @And("^user selects car morel \"([^\"]*)\" from select model drop down list$")
@@ -64,12 +67,12 @@ public class SearchCarsSteps {
     @Then("^user should see list of returned car$")
     public void user_should_see_list_of_returned_car() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+        //throw new PendingException();
     }
 
     @And("^the page tile should be \"([^\"]*)\"$")
     public void the_page_tile_should_be(String arg1) throws Throwable {
         // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+        //throw new PendingException();
     }
 }
